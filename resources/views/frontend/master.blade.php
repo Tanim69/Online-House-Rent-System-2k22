@@ -29,7 +29,7 @@
 
     <style>
         .banner{
-            background-image: url('images/logoimage.jpg')
+            background-image: url('images/logoimaged.jpg')
             height:300px;
             width: 300px;
 

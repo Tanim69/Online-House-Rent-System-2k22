@@ -14,8 +14,8 @@
             <label for=""><strong>Flat Size:</strong>{{ $house->flat_size }}</label>
 
             <h3> For Payment</h3>
-            <h4><strong>Bkash Number :+88 01836395151</strong></h4>
-            <h4><strong>Rocket Number :+88 01836395151</strong></h4>
+            <h4><strong>Bkash Number :+88 01752448570</strong></h4>
+            <h4><strong>Rocket Number :+88 01752448570</strong></h4>
 
 
 

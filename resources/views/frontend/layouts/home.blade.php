@@ -7,7 +7,7 @@
 <section class="">
 
     <div class="content">
-        <img src="/images/logoimage.jpg" alt="Cover Image" style="width:2000px;height:200px;"/>
+        <img src="/images/dhaka.jpg" alt="Cover Image" style="width:1000px;height:200px;"/>
     </div>
 
   </section>
