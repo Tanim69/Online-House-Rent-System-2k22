@@ -12,6 +12,7 @@
         <th scope="col">address</th>
         <th scope="col">occupation</th>
         <th scope="col">Phonenumber</th>
+        <th scope="col">Image</th>
       </tr>
     </thead>
     <tbody>
@@ -24,6 +25,9 @@
        <td> {{$data->address}}</td>
        <td> {{$data->occupation}}</td>
        <td> {{$data->phonenumber}}</td>
+       <td> <image width="100"src="{{url('/uploads/uploads/home',$data->image)}}"alt=""></td>
+
+
        <td>
            <a class="btn btn-success"  href="">View</a>
            <a class="btn btn-primary"  href="">Edit</a>
@@ -52,7 +56,7 @@
         <div class="modal-body">
 
 
-            <form action="{{route('tenant.create')}}" method="post">
+            <form action="{{route('tenant.create')}}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="modal-body">
                     <div class="form-group">
@@ -79,6 +83,10 @@
                         <label for="phone">Phone Number</label>
                         <input type="number" class="form-control" id="phone" name="phonenumber" aria-describedly="emailHelp" placeholder="Enter Name">
                     </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="exampleInputFile" name="image">
+                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                      </div>
               <button type="submit" class="btn btn-primary">Submit</button>
               </form>
         </div>

@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('phonenumber');
             $table->string('occupation');
             $table->text('image')->default('default.jpg');
-            $table->string('role');
+            $table->string('role')->default('user');
             $table->integer('bkashrocketnumber');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

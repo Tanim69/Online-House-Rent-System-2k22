@@ -55,7 +55,7 @@
         </div>
         <div class="form-group">
             <label for="role">Enter User Role:</label>
-            <input  class="form-control" id="role"type="role"name="role" required pattern="Houseowner|Tenant" pleaceholder="Enter User role">
+            <input  class="form-control" id="role"type="role"name="role"pattern="Houseowner|Tenant" pleaceholder="Enter User role">
         </div>
 
         <div class="form-group">

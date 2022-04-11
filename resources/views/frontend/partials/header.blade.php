@@ -26,20 +26,20 @@
 
 
 
-        <a href="{{ route('houseinfo.list') }}"class="btn btn-primary mr-2">For Tolet</a>
+        <a href="{{ route('houseinfo.list') }}"class="btn btn-danger">For Tolet</a>
 
         {{-- <a href="{{route('house')  }}">Add_Houseownerinfo</a>
         <a href="{{route('tenant')  }}">Add_tenantinfo</a> --}}
 
            @auth()
            <li>
-            <a href="#" style="position:relative; padding-left:50px;margin-right:20px"class="btn btn-primary mr-2">
-                <img src="/uploads/user/{{ Auth::user()->image }}" style="width:32px; height:32px; position:absolute;left:10px; border-radius:50%">
+            <a href="#" style="position:relative; padding-left:50px;margin-right:20px"class="btn btn-danger">
+                <img src="uploads/user{{ Auth::user()->image}}" style="width:32px; height:32px; position:absolute;left:10px; border-radius:50%">
                 {{ Auth::user()->name }} <span class="Caret"></span>
 
             </a>
 
-            <a href="{{route('logout')}}"class="btn btn-primary mr-2">logout</a>
+            <a href="{{route('logout')}}"class="btn btn-danger">logout</a>
 
             {{-- <ul class="dropdown-menu" role="menu">
                 <li><a href="{{'#'}}"><i class="fa fa-btn fa-user"></i>Profile</a></li>
@@ -52,7 +52,6 @@
             <a>
            {{-- <img src="url('/uploads/user/')" >{{auth()->user()->image}} alt="abc"> --}}
 
-
              {{-- <ul classs="dropdown-menu" role="menu">
             <li style="display:inline"><a href="#"><i class="fa fa-btn fa-user"></i> profile image</a></li>
            <li style="display:inline"><a href="{{ route('logout') }}"><i class="fa fa-btn fa-sign-out"></i> logout</a></li>
@@ -61,9 +60,9 @@
 
            @else
 
-        <a href="{{route('login.form')}}"class="btn btn-primary mr-2">login</a>
+        <a href="{{route('login.form')}}"class="btn btn-danger">login</a>
 
-        <a href="{{route('registration.form')}}"class="btn btn-primary mr-2">Registration</a>
+        <a href="{{route('registration.form')}}"class="btn btn-danger">Registration</a>
 
         @endauth
          <div class="row">
@@ -75,7 +74,7 @@
             @csrf
         <input name="search" type="text" pleacholder="search" class="form-control">
         <div class="col-md-4">
-        <button type="submit"class="btn btn-primary"> Search</button>
+        <button type="submit"class="btn btn-danger"> Search</button>
         </form>
         </div>
 

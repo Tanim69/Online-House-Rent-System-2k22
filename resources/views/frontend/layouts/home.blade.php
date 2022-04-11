@@ -24,7 +24,7 @@
         @foreach($all_houseinfo as $data)
 
 
-
+              
 
         <div class="row">
           <div class="col-md-5">

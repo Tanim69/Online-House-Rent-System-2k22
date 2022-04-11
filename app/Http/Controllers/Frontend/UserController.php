@@ -41,7 +41,7 @@ class UserController extends Controller
             'occupation'=>'required',
             'image'=>'required',
             'password'=>'required|min:6',
-            'role'=>'required',
+            // 'role'=>'required',
             'bkashrocketnumber'=>'required'
 
 
@@ -56,7 +56,7 @@ class UserController extends Controller
               'occupation'=>$request->occupation,
               'image'=>$filename,
               'password'=>bcrypt($request->password),
-              'role'=>$request->role,
+            //   'role'=>$request->role,
               'bkashrocketnumber'=>$request->bkashrocketnumber,
 
 

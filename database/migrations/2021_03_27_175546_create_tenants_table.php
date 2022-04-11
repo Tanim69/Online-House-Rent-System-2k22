@@ -20,7 +20,7 @@ class CreateTenantsTable extends Migration
             $table->string('occupation');
             $table->string('email');
             $table->integer('phonenumber');
-
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

@@ -17,7 +17,16 @@ class TenantController extends Controller
     }
     public function create(Request $request)
     {
-        //dd(request->all);
+    
+        // dd($request->all());
+
+        $filename = null;
+                    if($request->hasFile('image'))
+                    {
+                        $file= $request->file('image');
+                        $filename= date ('Ymdhms').'.'.$file->getClientOriginalExtension();
+                        $file->storeAs('/uploads/home', $filename);
+                    }
         //insert into tenant table
         Tenant::create([
             'id'=>$request->id,
@@ -26,6 +35,7 @@ class TenantController extends Controller
             'occupation'=>$request->occupation,
             'email'=>$request->email,
             'phonenumber'=>$request->phonenumber,
+            'image'=>$filename
         ]);
         return redirect()->back();
     }
