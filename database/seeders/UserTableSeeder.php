@@ -23,7 +23,7 @@ class UserTableSeeder extends Seeder
              'address'=>'abc',
              'phonenumber'=>'1234567890',
              'occupation'=>'service',
-             'image'=>'image',
+             'image'=>'image.jpg',
              'nidnumber'=>'9876543211000',
              'bkashrocketnumber'=>'01836695158',
 
@@ -39,7 +39,7 @@ class UserTableSeeder extends Seeder
              'address'=>'abc',
              'phonenumber'=>'1234567890',
              'occupation'=>'service',
-             'image'=>'image',
+             'image'=>'image2',
              'nidnumber'=>'9876543211000',
              'bkashrocketnumber'=>'01836695158',
 

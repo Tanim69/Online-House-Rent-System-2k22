@@ -149,3 +149,5 @@ Route::post('/tenant/create', [TenantController::class,'create'])->name('tenant.
 //delete add house
 Route::get('/tenant/delete{id}',[TenantController::class,'delete'])->name('tenant.delete');
 Route::get('/houseinfo/delete{id}',[HouseinfoController::class,'delete'])->name('houseinfo.delete');
+
+Route::get('/houseowner/delete{id}',[HouseController::class,'delete'])->name('houseowner.delete');

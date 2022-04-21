@@ -2,7 +2,9 @@
 
 @section('content')
 
-
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Add House
+</button>
 
 <table class="table">
   <thead>
@@ -14,6 +16,7 @@
       <th scope="col">image</th>
       <th scope="col">Action</th>
     </tr>
+    
   </thead>
 <tbody>
   @foreach($houses as $data)
@@ -23,11 +26,11 @@
        <td> {{$data->name}}</td>
        <td> {{$data->email}}</td>
        <td> {{$data->address}}</td>
-       <td> {{$data->image}}</td>
+       <td> <image width="100"src="{{url('/uploads/uploads/home',$data->image)}}"alt=""></td>
        <td>
            <a class="btn btn-success"  href="">View</a>
            <a class="btn btn-primary"  href="">Edit</a>
-           <a class="btn btn-danger" href="">Delete</a>
+           <a class="btn btn-danger" href="{{route('houseowner.delete',$data->id)}}">Delete</a>
        </td>
   </tr>
   @endforeach
@@ -35,9 +38,7 @@
 </table>
 
   <tr><!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Add House
-</button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

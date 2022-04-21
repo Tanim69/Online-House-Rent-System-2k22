@@ -30,6 +30,12 @@ class HouseController extends Controller
 
         ]);
         return redirect()->back();
-
     }
+
+public function delete($id)
+{
+house::find($id)->delete();
+return redirect()->back();
+}
+
 }

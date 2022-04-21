@@ -34,7 +34,8 @@
            @auth()
            <li>
             <a href="#" style="position:relative; padding-left:50px;margin-right:20px"class="btn btn-danger">
-                <img src="uploads/user{{ Auth::user()->image}}" style="width:32px; height:32px; position:absolute;left:10px; border-radius:50%">
+
+            <img src="uploads/user/{{ Auth::user()->image}}" style="width:32px; height:32px; position:absolute;left:10px; border-radius:50%">
                 {{ Auth::user()->name }} <span class="Caret"></span>
 
             </a>
