@@ -21,7 +21,7 @@
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">House Name</th>
+        <!-- <th scope="col">House Name</th> -->
         <th scope="col">Customer Name</th>
         <th scope="col">flat_price</th>
         <th scope="col">Date</th>
@@ -38,7 +38,6 @@
 
   <tr>
       <td>{{ $key+1 }}</td>
-      <td>{{$data->houseinfo->house_name}}</td>
       <td>{{$data->user->name}}</td>
       <td>{{$data->flat_price}}</td>
       <td>{{$data->bookingdate->format('Y-m-d')}}</td>

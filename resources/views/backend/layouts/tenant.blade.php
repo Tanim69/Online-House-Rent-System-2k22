@@ -29,8 +29,8 @@
 
 
        <td>
-           <a class="btn btn-success"  href="">View</a>
-           <a class="btn btn-primary"  href="">Edit</a>
+           <a class="btn btn-success"  href="{{ route('tenant.view',$data->id) }}">View</a>
+           <a class="btn btn-primary"  href="{{route('tenant.edit',$data->id)}}">Edit</a>
            <a class="btn btn-danger" href="{{route('tenant.delete',$data->id)}}">Delete</a>
        </td>
   </tr>

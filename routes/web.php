@@ -133,21 +133,27 @@ Route::get('/report', [ReportController::class,'report'])->name('report');
 //house route
 Route::get('/house',[HouseController::class,'list'])->name('house');
 Route::post('/house/create',[HouseController::class,'create'])->name('house.create');
+Route::get('/house/delete{id}',[HouseController::class,'delete'])->name('house.delete');
+
+
+Route::get('/house/edit/{id}', [HouseController::class,'HouseEdit'])->name('house.edit');
+Route::put('/house/update/{id}', [HouseController::class,'HouseUpdate'])->name('house.update');
+Route::get('/house/view/{id}', [HouseController::class,'HouseDetails'])->name('house.view');
+
 
 //Tenant routes
 Route::get('/tenant', [TenantController::class,'list'])->name('tenant');
 Route::post('/tenant/create', [TenantController::class,'create'])->name('tenant.create');
-
-
-
-});
-
-
-
-});
-
-//delete add house
 Route::get('/tenant/delete{id}',[TenantController::class,'delete'])->name('tenant.delete');
-Route::get('/houseinfo/delete{id}',[HouseinfoController::class,'delete'])->name('houseinfo.delete');
+Route::get('/tenant/edit/{id}', [TenantController::class,'TenantEdit'])->name('tenant.edit');
+Route::put('/tenant/update/{id}', [TenantController::class,'TenantUpdate'])->name('tenant.update');
+Route::get('/tenant/view/{id}', [TenantController::class,'TenantDetails'])->name('tenant.view');
 
-Route::get('/houseowner/delete{id}',[HouseController::class,'delete'])->name('houseowner.delete');
+
+});
+
+
+
+});
+
+

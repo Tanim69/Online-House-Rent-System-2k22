@@ -4,7 +4,7 @@
 
 @section('content')
 
-<a class="btn btn-success"href="{{route('houseinfo.create')}}">Addhouseinfo</a>
+<a class="btn btn-success"href="{{route('houseinfo.create')}}">Add House info</a>
 
 
 <table class="table">

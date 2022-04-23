@@ -32,10 +32,35 @@ class HouseController extends Controller
         return redirect()->back();
     }
 
-public function delete($id)
-{
-house::find($id)->delete();
-return redirect()->back();
-}
+    public function delete($id)
+    {
+          House::find($id)->delete();
+          return redirect()->back();
+    }
+                public function HouseEdit($id)
+           {
+              $house= House::find($id);
+             return view('backend.layouts.house-edit', compact('house'));
+              }
+                public function HouseUpdate(Request $request,$id)
+           {
+              $house=House::find($id);
+              $house->update([
+                'id'=>$request->id,
+                'name'=>$request->name,
+                'email'=>$request->email,
+                'address'=>$request->address
+    
+            ]);
+             return redirect()->route('house');
+              }
+    
+               public function HouseDetails($id)
+               {
+            $house=House::find($id);
+            return view('backend.layouts.house-details',compact('house'));
+    
+        }
+    
 
 }

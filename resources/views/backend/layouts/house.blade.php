@@ -28,9 +28,9 @@
        <td> {{$data->address}}</td>
        <td> <image width="100"src="{{url('/uploads/uploads/home',$data->image)}}"alt=""></td>
        <td>
-           <a class="btn btn-success"  href="">View</a>
-           <a class="btn btn-primary"  href="">Edit</a>
-           <a class="btn btn-danger" href="{{route('houseowner.delete',$data->id)}}">Delete</a>
+           <a class="btn btn-success"  href="{{ route('house.view',$data->id) }}">View</a>
+           <a class="btn btn-primary"  href="{{route('house.edit',$data->id)}}">Edit</a>
+           <a class="btn btn-danger" href="{{route('house.delete',$data->id)}}">Delete</a>
        </td>
   </tr>
   @endforeach

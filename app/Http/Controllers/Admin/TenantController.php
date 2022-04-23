@@ -40,10 +40,36 @@ class TenantController extends Controller
         return redirect()->back();
     }
 
-        public function delete($id)
-{
-Tenant::find($id)->delete();
-return redirect()->back();
-}
+    public function delete($id)
+    {
+        Tenant::find($id)->delete();
+         return redirect()->back();
+       }
+
+         public function TenantEdit($id)
+    {
+       $tenant=Tenant::find($id);
+      return view('backend.layouts.tenant-edit', compact('tenant'));
+       }
+         public function TenantUpdate(Request $request,$id)
+    {
+       $tenant=Tenant::find($id);
+       $tenant->update([
+         'id'=>$request->id,
+         'name'=>$request->name,
+         'address'=>$request->address,
+         'occupation'=>$request->occupation,
+         'email'=>$request->email,
+         'phonenumber'=>$request->phonenumber
+     ]);
+      return redirect()->route('tenant');
+       }
+
+        public function TenantDetails($id)
+        {
+     $tenant=Tenant::find($id);
+     return view('backend.layouts.tenant-details',compact('tenant'));
+
+ }
 
 }

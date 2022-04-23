@@ -10,7 +10,7 @@ class BookingController extends Controller
 {
     public function showbooking()
     {
-          $allbooking=Booking::with(['user','houseinfo'])->get();
+          $allbooking=Booking::all();
         //   dd($allbooking);
         return view('backend.layouts.booking.list',compact('allbooking'));
     }
