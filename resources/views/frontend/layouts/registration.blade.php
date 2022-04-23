@@ -53,10 +53,10 @@
             <label for="bkashrocketnumber">Enter User Bkash/Rocketnumber:</label>
             <input required class="form-control" id="bkashrocketnumber"type="bkashrocketnumber"name="bkashrocketnumber"pleaceholder="Enter User Bkash/Rocketnumber">
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label for="role">Enter User Role:</label>
             <input  class="form-control" id="role"type="role"name="role"pattern="Houseowner|Tenant" pleaceholder="Enter User role">
-        </div>
+        </div> -->
 
         <div class="form-group">
             <label for="image"> Enter User image</label>

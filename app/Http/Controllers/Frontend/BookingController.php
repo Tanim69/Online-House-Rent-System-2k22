@@ -42,7 +42,7 @@ class BookingController extends Controller
                  'flat_name'=>1,
 
               ]);
-              Mail::to(auth()->user()->email)->send(new Bookingnotification($booking));
+             // Mail::to(auth()->user()->email)->send(new Bookingnotification($booking));
 
 
               return redirect()->back()->with('message', 'Booking created Successfully');

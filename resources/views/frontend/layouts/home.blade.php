@@ -41,7 +41,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group d-flex justify-content-space-between">
                  
-                  <a href="{{ route('show.house',$data->id) }}" class="btn btn-primary mr-2"style="margin-right: 20px"><i class="fa fa-home" style="margin-right:10px"></i>Booknow</a>
+                  <a href="{{ route('show.house',$data->id) }}" class="btn btn-primary mr-2"style="margin-right: 20px"><i class="fa fa-home" style="margin-right:10px"></i>Book now</a>
                 <a href="{{ route('details.house',$data->id) }}"class="btn btn-info "style="margin-right:20px"><i class="fa fa-info-circle" style="margin-right:10px"></i>Details</a>
                 <a href="{{ route('payment.house',$data->id) }}" class="btn btn-success mr-2"style="margin-right: 20px"><i class="fa fa-credit-card"style="margin-right:10px"></i>Payment</a>
             </div>

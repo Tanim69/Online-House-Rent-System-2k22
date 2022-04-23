@@ -29,8 +29,8 @@
 
 
         <div class="form-group">
-            <label for="number">EmargencyContactNumber:</label>
-            <input required name="number" id="number" class="form-control">
+            <label for="number">Emergency Contact Number:</label>
+            <input required type="number" id="number" class="form-control">
         </div>
         {{-- <div class="form-group">
             <label for="id">Flat_id:</label>
@@ -42,7 +42,7 @@
         </div> --}}
         <div class="form-group">
             <label for="price">Flat_price:</label>
-            <input required name="price" id="price" class="form-control">
+            <input required type="number" id="price" class="form-control">
         </div>
 
 
