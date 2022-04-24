@@ -29,7 +29,7 @@
 
         <div class="form-group">
             <label for="id">Enter House ID(this is avaible on bookingmail):</label>
-            <input required type="number" id="id" class="form-control">
+            <input required name="id" id="id" class="form-control">
         </div>
 
         <div class="form-group">
@@ -39,7 +39,7 @@
 
         <div class="form-group">
             <label for="number">Enter Payment number:</label>
-            <input required type="number" id="number" class="form-control">
+            <input required name="number" id="number" class="form-control">
         </div>
 
         <div class="form-group">
@@ -49,11 +49,11 @@
         </div>
         <div class="form-group">
             <label for="transactionid">Enter Transaction Id:</label>
-            <input required type="number" id="transactionid" class="form-control">
+            <input required name="transactionid" id="transactionid" class="form-control">
         </div>
         <div class="form-group">
             <label for="amount">Enter Payment Amount:</label>
-            <input required type="number" id="amount" class="form-control">
+            <input required name="amount" id="amount" class="form-control">
         </div>
 
         <div>

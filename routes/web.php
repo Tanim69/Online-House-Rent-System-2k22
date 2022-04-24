@@ -55,6 +55,8 @@ Route::get('/houseinfo/list', [HouseinfoController::class,'list'])->name('housei
 Route::get('/houseinfo/create', [HouseinfoController::class,'createinfo'])->name('houseinfo.create');
 Route::post('/houseinfo/store',[HouseinfoController::class,'store'])->name('houseinfo.store');
 Route::post('/houseinfo/search', [HouseinfoController::class,'search'])->name('houseinfo.search');
+Route::get('/houseinfo/delete/{id}', [HouseinfoController::class,'delete'])->name('houseinfo.delete');
+
 
 });
 

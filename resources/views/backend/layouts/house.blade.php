@@ -51,7 +51,7 @@
         </button>
       </div>
 
-      <form action="{{route('house.create')}}" method="post">
+      <form action="{{route('house.create')}}" method="post" enctype="multipart/form-data">
 
       @csrf
 

@@ -18,6 +18,14 @@ class HouseController extends Controller
 
     public function create(Request $request)
     {
+
+        $filename = null;
+        if($request->hasFile('image'))
+        {
+            $file= $request->file('image');
+            $filename= date ('Ymdhms').'.'.$file->getClientOriginalExtension();
+            $file->storeAs('/uploads/home', $filename);
+        }
         // dd('fhbdhbv');
         // dd($request->all());
         //insert into house table
@@ -25,8 +33,8 @@ class HouseController extends Controller
             'id'=>$request->id,
             'name'=>$request->name,
             'email'=>$request->email,
-            'image'=>$request->image,
-            'address'=>$request->address,
+            'image'=>$filename,
+            'address'=>$request->address
 
         ]);
         return redirect()->back();
@@ -63,4 +71,4 @@ class HouseController extends Controller
         }
     
 
-}
+    }
